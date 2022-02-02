@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="casual"
+    android:text="LOGIN"
+    android:textColor="@color/black"
+    android:textSize="50sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.260" />
+
+<EditText
+    android:id="@+id/edtEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Enter Your Email..."
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/edtPass"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView"
+    app:layout_constraintVertical_bias="0.808" />
+
+<EditText
+    android:id="@+id/edtPass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="144dp"
+    android:layout_marginBottom="24dp"
+    android:ems="10"
+    android:hint="Enter Your Password..."
+    android:inputType="textPassword"
+    app:layout_constraintBottom_toTopOf="@+id/checkBox"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView"
+    app:layout_constraintVertical_bias="1.0" />
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="10dp"
+    android:layout_marginBottom="60dp"
+    android:backgroundTint="@color/black"
+    android:fontFamily="casual"
+    android:onClick="goToDashboardScreen"
+    android:text="Login"
+    android:textColor="@color/white"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<CheckBox
+    android:id="@+id/checkBox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="68dp"
+    android:text="I'm not a robot"
+    android:buttonTint="@color/black"
+    app:layout_constraintBottom_toTopOf="@+id/button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.346"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<TextView
+    android:id="@+id/goToSignup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="casual"
+    android:onClick="goToSignUpScreen"
+    android:text="Don't have an account?  Sign Up"
+    android:textColor="@color/black"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.974" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
